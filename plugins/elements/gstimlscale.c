@@ -7,6 +7,18 @@
 G_DEFINE_TYPE (GstMyFilter, gst_my_filter, GST_TYPE_ELEMENT);
 GST_ELEMENT_REGISTER_DEFINE(my_filter, "my-filter", GST_RANK_NONE, GST_TYPE_MY_FILTER);
 
+#define GST_PLUGIN_DEFINE (
+  GST_VERSION_MAJOR,
+  GST_VERSION_MINOR,
+  my_filter,
+  "My filter plugin",
+  plugin_init,
+  VERSION,
+  "LGPL",
+  "GStreamer",
+  "http://gstreamer.net/"
+)
+
 
 static GstStaticPadTemplate sinktemplate = GST_STATIC_PAD_TEMPLATE ("sink",
     GST_PAD_SINK,
@@ -121,17 +133,4 @@ plugin_init (GstPlugin *plugin)
 {
   return GST_ELEMENT_REGISTER (my_filter, plugin);
 }
-
-
-GST_PLUGIN_DEFINE (
-  GST_VERSION_MAJOR,
-  GST_VERSION_MINOR,
-  my_filter,
-  "My filter plugin",
-  plugin_init,
-  VERSION,
-  "LGPL",
-  "GStreamer",
-  "http://gstreamer.net/"
-)
 
