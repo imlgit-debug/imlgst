@@ -3,7 +3,6 @@
 #endif
 
 #include "gstimlscale.h"
-#include "../../gst/gst-i18n-lib.h"
 
 GST_DEBUG_CATEGORY_STATIC (gst_imlscale_debug);
 #define GST_IMLSCALE_DEFAULT gst_imlscale_debug
