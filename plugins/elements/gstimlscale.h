@@ -31,6 +31,4 @@ typedef struct _GstMyFilterClass {
 /* Standard function returning type information. */
 GType gst_my_filter_get_type (void);
 
-GST_ELEMENT_REGISTER_DECLARE(my_filter)
-
 
