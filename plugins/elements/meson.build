@@ -23,7 +23,6 @@ gst_elements_sources = [
   'gsttee.c',
   'gsttypefindelement.c',
   'gstvalve.c',
-  'gstimlscale.c',
 ]
 
 gst_elements = library('gstcoreelements',
