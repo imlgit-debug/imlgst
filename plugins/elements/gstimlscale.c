@@ -35,8 +35,6 @@
 #endif
 
 #include <gst/gst.h>
-#include <gst/video/video.h>
-#include <gst/video/gstvideofilter.h>
 #include "gstimlscale.h"
 
 GST_DEBUG_CATEGORY_STATIC (gst_imlscale_debug_category);
