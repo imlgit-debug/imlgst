@@ -20,8 +20,7 @@
 #ifndef _GST_IMLSCALE_H_
 #define _GST_IMLSCALE_H_
 
-#include <gst/video/video.h>
-#include <gst/video/gstvideofilter.h>
+#include <gst/gst.h>
 
 G_BEGIN_DECLS
 
